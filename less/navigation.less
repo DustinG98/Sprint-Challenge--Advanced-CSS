@@ -1,8 +1,10 @@
 // Navigation code here
 
 nav{
-    .center();
-    flex-wrap: wrap;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    z-index: 2;
     padding-top: 1%;
     width: 100%;
     margin: 0 auto; 
@@ -13,10 +15,11 @@ nav{
     }
 
     .nav-container{
-        max-width: 800px;
-        width: 35%;
+        width: 100%;
+        text-align: center;
         @media @mobile {
             width: 80%;
+            padding-bottom: 3%;
         }
     }
     .logo-text{
@@ -28,7 +31,6 @@ nav{
     }
     .links{
         .flexBox(space-evenly, center, row);
-        
         width: 100%;
         a{
             text-decoration: none;
