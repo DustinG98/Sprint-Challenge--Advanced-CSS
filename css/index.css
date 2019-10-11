@@ -365,6 +365,12 @@ footer {
   padding: 1% 1%;
   margin: 1% 0;
   border-radius: 10px;
+  margin-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .home .contactForm input {
+    margin-bottom: 5%;
+  }
 }
 .home .contactForm .btn {
   display: flex;
