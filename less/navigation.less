@@ -1,1 +1,33 @@
 // Navigation code here
+
+nav{
+    .center();
+    flex-wrap: wrap;
+    padding-top: 2%;
+    width: 100%;
+    margin: 0 auto; 
+    background-color: @nav-bg;
+
+    .nav-container{
+        max-width: 800px;
+        width: 70%;
+    }
+    .logo-text{
+        h1{
+            text-align: center;
+            font-size: 4rem;
+        }
+        margin-bottom: 3%;
+    }
+    .links{
+        .flexBox(space-evenly, center, row);
+        
+        width: 100%;
+        a{
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.8rem;
+        }
+        padding-bottom: 1%;
+    }
+}
