@@ -8,9 +8,16 @@ nav{
     margin: 0 auto; 
     background-color: @nav-bg;
 
+    @media @mobile {
+        .flexBox(center, center, column);
+    }
+
     .nav-container{
         max-width: 800px;
         width: 35%;
+        @media @mobile {
+            width: 80%;
+        }
     }
     .logo-text{
         h1{
